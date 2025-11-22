@@ -160,13 +160,19 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     
                     <!-- Producto 1: Negritos -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                        <img 
-                            src="https://placehold.co/600x400/854d0e/ffffff?text=Negritos+(Brownies)" 
-                            alt="Negritos o Brownies" 
-                            class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/854d0e/ffffff?text=Negritos'"
-                        >
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                        <!-- Carrusel de Imágenes -->
+                        <div class="relative h-56 w-full product-carousel">
+                            <!-- Imagen 1 (Principal) -->
+                            <img src="https://placehold.co/600x400/854d0e/ffffff?text=Negritos+(Brownies)" alt="Negritos 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <!-- Imagen 2 -->
+                            <img src="https://placehold.co/600x400/5d3509/ffffff?text=Negritos+Detalle" alt="Negritos 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+                            
+                            <!-- Botones de navegación (visibles al pasar el mouse) -->
+                            <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
+                            <button onclick="moveSlide(this, 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❯</button>
+                        </div>
+
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">Negritos (Brownies)</h3>
                             <p class="text-gray-600 mb-4">
@@ -191,13 +197,20 @@
                     </div>
                     
                     <!-- Producto 2: Alfajores -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                        <img 
-                            src="https://placehold.co/600x400/f5e0c0/a16207?text=Alfajores" 
-                            alt="Alfajores" 
-                            class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/f5e0c0/a16207?text=Alfajores'"
-                        >
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                        <!-- Carrusel de Imágenes -->
+                        <div class="relative h-56 w-full product-carousel">
+                            <!-- Imagen 1 (Tu imagen local) -->
+                            <img src="imagen/alfajornavideno.jpeg" alt="Alfajores Principal" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img" onerror="this.src='https://placehold.co/600x400/f5e0c0/a16207?text=Alfajores'">
+                            <!-- Imagen 2 (Ejemplo de relleno) -->
+                            <img src="https://placehold.co/600x400/a16207/f5e0c0?text=Relleno+de+Manjar" alt="Alfajores Relleno" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+                            <!-- Imagen 3 (Ejemplo de caja) -->
+                            <img src="https://placehold.co/600x400/f5e0c0/a16207?text=Caja+de+Regalo" alt="Alfajores Caja" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+
+                            <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
+                            <button onclick="moveSlide(this, 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❯</button>
+                        </div>
+
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">Alfajores de Manjar</h3>
                             <p class="text-gray-600 mb-4">Dos galletitas suaves rellenas del mejor manjar (dulce de leche).</p>
@@ -220,13 +233,14 @@
                     </div>
                     
                     <!-- Producto 3: Cupcakes -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                        <img 
-                            src="https://placehold.co/600x400/ffedd5/ea580c?text=Cupcakes" 
-                            alt="Cupcakes" 
-                            class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/ffedd5/ea580c?text=Cupcakes'"
-                        >
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                        <div class="relative h-56 w-full product-carousel">
+                            <img src="https://placehold.co/600x400/ffedd5/ea580c?text=Cupcakes" alt="Cupcakes 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/ea580c/ffedd5?text=Sabores+Variados" alt="Cupcakes 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+                            
+                            <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
+                            <button onclick="moveSlide(this, 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❯</button>
+                        </div>
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">Cupcakes Decorados</h3>
                             <p class="text-gray-600 mb-4">Esponjosos y con un frosting delicioso. ¡Pregunta por los sabores!</p>
@@ -234,13 +248,14 @@
                     </div>
                     
                     <!-- Producto 4: Galletas Choco Chips -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                        <img 
-                            src="https://placehold.co/600x400/f3d9b0/7c2d12?text=Galletas+Choco+Chips" 
-                            alt="Galletas Choco Chips" 
-                            class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/f3d9b0/7c2d12?text=Galletas'"
-                        >
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                         <div class="relative h-56 w-full product-carousel">
+                            <img src="https://placehold.co/600x400/f3d9b0/7c2d12?text=Galletas+Choco+Chips" alt="Galletas 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/7c2d12/f3d9b0?text=Recien+Horneadas" alt="Galletas 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+                            
+                            <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
+                            <button onclick="moveSlide(this, 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❯</button>
+                        </div>
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">Galletas Choco Chips</h3>
                             <p class="text-gray-600 mb-4">Crujientes por fuera, suaves por dentro. ¡Llenas de chocolate!</p>
@@ -263,27 +278,59 @@
                     </div>
 
                     <!-- Producto 5: Pasteles (Cake) -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                        <img 
-                            src="https://placehold.co/600x400/fed7aa/c2410c?text=Pasteles+(Cake)" 
-                            alt="Pasteles" 
-                            class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/fed7aa/c2410c?text=Pasteles'"
-                        >
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                         <div class="relative h-56 w-full product-carousel">
+                            <img src="https://placehold.co/600x400/fed7aa/c2410c?text=Pasteles+(Cake)" alt="Pasteles 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/c2410c/fed7aa?text=Decoracion+Especial" alt="Pasteles 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+                            
+                            <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
+                            <button onclick="moveSlide(this, 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❯</button>
+                        </div>
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">Pasteles (Cake)</h3>
                             <p class="text-gray-600 mb-4">Hacemos pasteles pequeños y medianos por encargo. ¡Perfectos para celebrar!</p>
                         </div>
                     </div>
 
-                    <!-- Producto 6: Otros Dulces -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-                        <img 
-                            src="https://placehold.co/600x400/d1fae5/047857?text=¡Y+mucho+más!" 
-                            alt="Otros dulces" 
-                            class="w-full h-56 object-cover"
-                            onerror="this.src='https://placehold.co/600x400/d1fae5/047857?text=¡Y+mucho+más!'"
-                        >
+                    <!-- Producto 6: Chocolates (Duros) -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                         <div class="relative h-56 w-full product-carousel">
+                            <img src="https://placehold.co/600x400/4a2c2a/f5e0c0?text=Chocolates" alt="Chocolates 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/f5e0c0/4a2c2a?text=Bombones" alt="Chocolates 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+                            
+                            <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
+                            <button onclick="moveSlide(this, 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❯</button>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Chocolates (Duros)</h3>
+                            <p class="text-gray-600 mb-4">Bombones y figuras de chocolate macizo artesanal. ¡Puro sabor a cacao!</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 7: Chocobombas -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                         <div class="relative h-56 w-full product-carousel">
+                            <img src="https://placehold.co/600x400/7c2d12/ffedd5?text=Chocobombas" alt="Chocobombas 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/ffedd5/7c2d12?text=Explosion+de+Sabor" alt="Chocobombas 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+                            
+                            <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
+                            <button onclick="moveSlide(this, 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❯</button>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Chocobombas</h3>
+                            <p class="text-gray-600 mb-4">Esferas de chocolate rellenas de cacao y malvaviscos. ¡Explosión de sabor en tu leche!</p>
+                        </div>
+                    </div>
+
+                    <!-- Producto 8: Otros Dulces -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                         <div class="relative h-56 w-full product-carousel">
+                            <img src="https://placehold.co/600x400/d1fae5/047857?text=¡Y+mucho+más!" alt="Otros 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/047857/d1fae5?text=Nuevas+Creaciones" alt="Otros 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+                            
+                            <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
+                            <button onclick="moveSlide(this, 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❯</button>
+                        </div>
                         <div class="p-6">
                             <h3 class="font-bold text-xl mb-2 text-gray-800">¡Y mucho más!</h3>
                             <p class="text-gray-600 mb-4">Siempre estoy horneando cosas nuevas. ¡Pregúntame qué hay de nuevo esta semana!</p>
@@ -333,6 +380,41 @@
             <p class="mt-2">Hecho con ❤️ por Jorge Enrique</p>
         </div>
     </footer>
+
+    <!-- Script para controlar los carruseles individuales -->
+    <script>
+        function moveSlide(btn, direction) {
+            // Encontrar el contenedor del carrusel específico
+            const carousel = btn.closest('.product-carousel');
+            const images = carousel.querySelectorAll('.carousel-img');
+            
+            // Encontrar la imagen actual visible
+            let activeIndex = -1;
+            images.forEach((img, index) => {
+                if (img.classList.contains('opacity-100')) {
+                    activeIndex = index;
+                }
+            });
+
+            // Ocultar la actual
+            images[activeIndex].classList.remove('opacity-100');
+            images[activeIndex].classList.add('opacity-0');
+
+            // Calcular el índice de la siguiente imagen
+            let nextIndex = activeIndex + direction;
+            
+            // Loop infinito (si llega al final, vuelve al inicio y viceversa)
+            if (nextIndex >= images.length) {
+                nextIndex = 0;
+            } else if (nextIndex < 0) {
+                nextIndex = images.length - 1;
+            }
+
+            // Mostrar la nueva imagen
+            images[nextIndex].classList.remove('opacity-0');
+            images[nextIndex].classList.add('opacity-100');
+        }
+    </script>
 
 </body>
 </html>

@@ -5,31 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Este es el título que aparece en la pestaña del navegador -->
-    <title>JE Dulce Gesto - ¡Haz tu pedido!</title>
+    <title>JE Dulce Gesto - Edición Navideña 🎄</title>
     
-    <!-- Estamos usando Tailwind CSS para los estilos. Es como magia para que se vea bonito sin esfuerzo. -->
+    <!-- Estamos usando Tailwind CSS para los estilos. -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
-        /* Puedes agregar estilos personalizados aquí si lo necesitas */
         .scroll-mt-24 {
             scroll-margin-top: 6rem;
         }
     </style>
 </head>
-<body class="bg-orange-50 font-sans text-gray-800">
+<body class="bg-red-50 font-sans text-gray-800">
 
     <!-- ==== 1. ENCABEZADO Y NAVEGACIÓN ==== -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="bg-white shadow-md sticky top-0 z-50 border-b-4 border-green-600">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold text-orange-600">
-                JE Dulce Gesto
+            <a href="#" class="text-3xl font-bold text-red-600 flex items-center gap-2">
+                🎅 JE Dulce Gesto
             </a>
             <div class="space-x-2 md:space-x-6 text-sm md:text-base">
-                <a href="#cursos" class="text-gray-600 hover:text-orange-500">Cursos</a>
-                <a href="#productos" class="text-gray-600 hover:text-orange-500">Productos</a>
-                <a href="#sobre-mi" class="text-gray-600 hover:text-orange-500">Sobre Mí</a>
-                <a href="#pedir" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full transition transform hover:scale-105">¡Pedir Ahora!</a>
+                <a href="#cursos" class="text-gray-600 hover:text-red-500 font-medium">Cursos</a>
+                <a href="#productos" class="text-gray-600 hover:text-red-500 font-medium">Lista de Productos</a>
+                <a href="#sobre-mi" class="text-gray-600 hover:text-red-500 font-medium">Sobre Mí</a>
+                <a href="#pedir" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition transform hover:scale-105 shadow-md border-b-4 border-green-800">¡Pedir Ahora! 🎁</a>
             </div>
         </nav>
     </header>
@@ -37,16 +36,15 @@
     <!-- ==== 2. SECCIÓN DE BIENVENIDA Y CURSOS ==== -->
     <main>
         <section class="container mx-auto px-6 py-10 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold text-orange-600 mb-4">
-                ¡El sabor casero en cada mordisco!
+            <h1 class="text-4xl md:text-6xl font-bold text-red-600 mb-4 drop-shadow-sm">
+                ❄️ ¡El sabor de la Navidad en cada mordisco! ❄️
             </h1>
             <p class="text-xl text-gray-700 mb-8">
-                Bienvenidos a mi rincón de dulces. ¡Todo hecho con mucho amor!
+                Bienvenidos a mi rincón de dulces navideños. ¡Todo hecho con mucho amor!
             </p>
             
             <!-- ==== SECCIÓN DE CURSOS INTEGRADA ==== -->
-            <!-- Hemos unido la imagen y la tarjeta en un solo bloque (div) para que estén "adjuntos" -->
-            <div id="cursos" class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-orange-100 relative mt-4 scroll-mt-24 transform transition hover:shadow-3xl">
+            <div id="cursos" class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-red-200 relative mt-4 scroll-mt-24 transform transition hover:shadow-3xl">
                 
                 <!-- Imagen de Cabecera Integrada en la tarjeta -->
                 <div class="relative h-64 md:h-80 group">
@@ -54,10 +52,10 @@
                         src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=1200&auto=format&fit=crop" 
                         alt="Clases de cocina para niños" 
                         class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
-                        onerror="this.src='https://placehold.co/1200x400/fed7aa/c2410c?text=Cursos+de+Cocina'"
+                        onerror="this.src='https://placehold.co/1200x400/ef4444/fee2e2?text=Cursos+Navideños'"
                     >
                     <!-- Texto sobre la imagen -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-orange-900/80 via-transparent to-transparent flex flex-col justify-end items-center pb-6 px-4">
+                    <div class="absolute inset-0 bg-gradient-to-t from-red-900/80 via-transparent to-transparent flex flex-col justify-end items-center pb-6 px-4">
                          <h2 class="text-3xl md:text-5xl font-bold text-white drop-shadow-lg mb-1">
                             ¡Inscríbete en mis cursos!
                         </h2>
@@ -65,9 +63,9 @@
                 </div>
 
                 <!-- Banner del título del curso -->
-                <div class="bg-orange-500 py-4 px-6 relative z-10">
+                <div class="bg-red-600 py-4 px-6 relative z-10">
                     <h2 class="text-2xl md:text-3xl font-bold text-white uppercase tracking-wider flex justify-center items-center gap-2">
-                        <span>🧁</span> ¡Cursos de Mini Chef! <span>🍪</span>
+                        <span>🎄</span> ¡Cursos de Mini Chef! <span>🍪</span>
                     </h2>
                 </div>
                 
@@ -75,19 +73,21 @@
                     <!-- Precios -->
                     <div class="flex flex-col md:flex-row justify-center items-stretch gap-6 mb-8">
                         <!-- Precio 1 -->
-                        <div class="bg-orange-50 p-6 rounded-2xl border-2 border-orange-100 w-full md:w-1/2 flex flex-col justify-center items-center hover:shadow-lg transition">
+                        <div class="bg-red-50 p-6 rounded-2xl border-2 border-red-100 w-full md:w-1/2 flex flex-col justify-center items-center hover:shadow-lg transition relative">
+                            <!-- Decoración -->
+                            <span class="absolute top-2 right-2 text-2xl">⛄</span>
                             <h3 class="text-lg font-bold text-gray-600 mb-1">Inscripción Individual</h3>
-                            <div class="text-4xl font-extrabold text-orange-600 mb-1">$12 <span class="text-sm font-bold text-gray-500">USD</span></div>
+                            <div class="text-4xl font-extrabold text-red-600 mb-1">$12 <span class="text-sm font-bold text-gray-500">USD</span></div>
                             <p class="text-sm text-gray-500">Por 1 persona</p>
                         </div>
                         
                         <!-- Precio 2 (Promo) -->
-                        <div class="bg-yellow-50 p-6 rounded-2xl border-2 border-yellow-400 w-full md:w-1/2 flex flex-col justify-center items-center relative transform md:scale-105 shadow-md">
-                            <div class="absolute -top-3 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm animate-pulse">
-                                ¡MEJOR OFERTA!
+                        <div class="bg-green-50 p-6 rounded-2xl border-2 border-green-400 w-full md:w-1/2 flex flex-col justify-center items-center relative transform md:scale-105 shadow-md">
+                            <div class="absolute -top-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm animate-pulse border border-white">
+                                ¡PROMO NAVIDEÑA! 🎁
                             </div>
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Promo Amigos</h3>
-                            <div class="text-5xl font-extrabold text-orange-600 mb-1">$20 <span class="text-sm font-bold text-gray-500">USD</span></div>
+                            <div class="text-5xl font-extrabold text-green-700 mb-1">$20 <span class="text-sm font-bold text-gray-500">USD</span></div>
                             <p class="text-sm text-gray-600 font-bold">Por 2 personas ($10 c/u)</p>
                         </div>
                     </div>
@@ -112,9 +112,9 @@
                                 <span class="flex-shrink-0 w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs font-bold">✓</span>
                                 <span>¡Te llevas tus <strong>productos elaborados</strong>!</span>
                             </li>
-                            <li class="flex items-center gap-3 md:col-span-2 justify-center bg-white py-2 rounded-lg shadow-sm border border-orange-100">
+                            <li class="flex items-center gap-3 md:col-span-2 justify-center bg-white py-2 rounded-lg shadow-sm border border-red-100">
                                 <span class="text-xl">🎓</span>
-                                <span class="font-bold text-orange-600">Certificado de participación</span>
+                                <span class="font-bold text-red-600">Certificado de participación</span>
                             </li>
                         </ul>
                     </div>
@@ -122,7 +122,7 @@
                     <div class="mt-8">
                         <a href="https://wa.me/593999503436?text=Hola,%20quisiera%20inscribirme%20en%20el%20curso%20de%20Mini%20Chef" 
                            target="_blank" 
-                           class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105">
+                           class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105 border-b-4 border-green-800">
                             ¡Quiero Inscribirme!
                         </a>
                     </div>
@@ -132,14 +132,17 @@
         </section>
 
         <!-- ==== 3. SECCIÓN "SOBRE MÍ" ==== -->
-        <section id="sobre-mi" class="bg-white py-20">
-            <div class="container mx-auto px-6 text-center">
+        <section id="sobre-mi" class="bg-white py-20 relative overflow-hidden">
+            <!-- Adorno de fondo -->
+            <div class="absolute top-0 right-0 -mr-10 -mt-10 text-red-100 opacity-20 text-9xl">❄️</div>
+            
+            <div class="container mx-auto px-6 text-center relative z-10">
                 <h2 class="text-3xl font-bold text-gray-800 mb-6">¡Hola! Soy el repostero</h2>
                 
                 <img 
                     src="imagen/Jorgito.png" 
                     alt="Niño chef en un delantal" 
-                    class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-orange-200 shadow-md object-cover"
+                    class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-red-200 shadow-md object-cover"
                     onerror="this.src='https://placehold.co/150x150/ffedd5/ea580c?text=Tu+Foto'"
                 >
                 
@@ -152,23 +155,20 @@
         <!-- ==== 4. SECCIÓN DE PRODUCTOS ==== -->
         <section id="productos" class="py-20">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-orange-600 mb-12">
-                    Nuestras Delicias
+                <h2 class="text-3xl font-bold text-center text-red-600 mb-12">
+                    🎄 Nuestras Delicias 🎄
                 </h2>
                 
                 <!-- Rejilla de productos -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     
                     <!-- Producto 1: Negritos -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group border border-red-100">
                         <!-- Carrusel de Imágenes -->
                         <div class="relative h-56 w-full product-carousel">
-                            <!-- Imagen 1 (Principal) -->
-                            <img src="https://placehold.co/600x400/854d0e/ffffff?text=Negritos+(Brownies)" alt="Negritos 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
-                            <!-- Imagen 2 -->
-                            <img src="https://placehold.co/600x400/5d3509/ffffff?text=Negritos+Detalle" alt="Negritos 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+                            <img src="https://placehold.co/600x400/854d0e/ffffff?text=Negritos+Navideños" alt="Negritos 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/5d3509/ffffff?text=Con+Nueces" alt="Negritos 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
                             
-                            <!-- Botones de navegación (visibles al pasar el mouse) -->
                             <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
                             <button onclick="moveSlide(this, 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❯</button>
                         </div>
@@ -177,34 +177,31 @@
                             <h3 class="font-bold text-xl mb-2 text-gray-800">Negritos (Brownies)</h3>
                             <p class="text-gray-600 mb-4">
                                 Súper chocolatados y suavecitos. <br>
-                                <span class="font-bold text-orange-600">¡Pídelos con nuez o sin nuez!</span>
+                                <span class="font-bold text-red-600">¡Pídelos con nuez o sin nuez!</span>
                             </p>
                             <ul class="text-sm text-gray-700 space-y-2">
-                                <li class="flex justify-between items-center border-b pb-1">
+                                <li class="flex justify-between items-center border-b border-red-100 pb-1">
                                     <span>Caja x5 mini brownies</span>
-                                    <span class="font-bold text-orange-600">$1.50</span>
+                                    <span class="font-bold text-red-600">$1.50</span>
                                 </li>
-                                <li class="flex justify-between items-center border-b pb-1">
+                                <li class="flex justify-between items-center border-b border-red-100 pb-1">
                                     <span>1 Brownie grande</span>
-                                    <span class="font-bold text-orange-600">$1.00</span>
+                                    <span class="font-bold text-red-600">$1.00</span>
                                 </li>
                                 <li class="flex justify-between items-center">
                                     <span>50 mini brownies</span>
-                                    <span class="font-bold text-orange-600">$12.00</span>
+                                    <span class="font-bold text-red-600">$12.00</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     
                     <!-- Producto 2: Alfajores -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group border border-red-100">
                         <!-- Carrusel de Imágenes -->
                         <div class="relative h-56 w-full product-carousel">
-                            <!-- Imagen 1 (Tu imagen local) -->
                             <img src="imagen/alfajornavideno.jpeg" alt="Alfajores Principal" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img" onerror="this.src='https://placehold.co/600x400/f5e0c0/a16207?text=Alfajores'">
-                            <!-- Imagen 2 (Ejemplo de relleno) -->
                             <img src="https://placehold.co/600x400/a16207/f5e0c0?text=Relleno+de+Manjar" alt="Alfajores Relleno" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
-                            <!-- Imagen 3 (Ejemplo de caja) -->
                             <img src="https://placehold.co/600x400/f5e0c0/a16207?text=Caja+de+Regalo" alt="Alfajores Caja" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
 
                             <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
@@ -216,26 +213,26 @@
                             <p class="text-gray-600 mb-4">Dos galletitas suaves rellenas del mejor manjar (dulce de leche).</p>
                             
                             <ul class="text-sm text-gray-700 space-y-2">
-                                <li class="flex justify-between items-center border-b pb-1">
+                                <li class="flex justify-between items-center border-b border-red-100 pb-1">
                                     <span>Caja x5 mini alfajores</span>
-                                    <span class="font-bold text-orange-600">$2.50</span>
+                                    <span class="font-bold text-red-600">$2.50</span>
                                 </li>
-                                <li class="flex justify-between items-center border-b pb-1">
+                                <li class="flex justify-between items-center border-b border-red-100 pb-1">
                                     <span>25 mini alfajores</span>
-                                    <span class="font-bold text-orange-600">$10.00</span>
+                                    <span class="font-bold text-red-600">$10.00</span>
                                 </li>
                                 <li class="flex justify-between items-center">
                                     <span>50 mini alfajores</span>
-                                    <span class="font-bold text-orange-600">$18.00</span>
+                                    <span class="font-bold text-red-600">$18.00</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     
                     <!-- Producto 3: Cupcakes -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group border border-red-100">
                         <div class="relative h-56 w-full product-carousel">
-                            <img src="https://placehold.co/600x400/ffedd5/ea580c?text=Cupcakes" alt="Cupcakes 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/ffedd5/ea580c?text=Cupcakes+Festivos" alt="Cupcakes 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
                             <img src="https://placehold.co/600x400/ea580c/ffedd5?text=Sabores+Variados" alt="Cupcakes 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
                             
                             <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
@@ -248,9 +245,9 @@
                     </div>
                     
                     <!-- Producto 4: Galletas Choco Chips -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group border border-red-100">
                          <div class="relative h-56 w-full product-carousel">
-                            <img src="https://placehold.co/600x400/f3d9b0/7c2d12?text=Galletas+Choco+Chips" alt="Galletas 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/f3d9b0/7c2d12?text=Galletas+Navideñas" alt="Galletas 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
                             <img src="https://placehold.co/600x400/7c2d12/f3d9b0?text=Recien+Horneadas" alt="Galletas 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
                             
                             <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
@@ -261,26 +258,26 @@
                             <p class="text-gray-600 mb-4">Crujientes por fuera, suaves por dentro. ¡Llenas de chocolate!</p>
                             
                             <ul class="text-sm text-gray-700 space-y-2">
-                                <li class="flex justify-between items-center border-b pb-1">
+                                <li class="flex justify-between items-center border-b border-red-100 pb-1">
                                     <span>1 Galleta</span>
-                                    <span class="font-bold text-orange-600">$0.60</span>
+                                    <span class="font-bold text-red-600">$0.60</span>
                                 </li>
-                                <li class="flex justify-between items-center border-b pb-1">
+                                <li class="flex justify-between items-center border-b border-red-100 pb-1">
                                     <span>3 Galletas</span>
-                                    <span class="font-bold text-orange-600">$1.50</span>
+                                    <span class="font-bold text-red-600">$1.50</span>
                                 </li>
                                 <li class="flex justify-between items-center">
                                     <span>12 Galletas</span>
-                                    <span class="font-bold text-orange-600">$5.00</span>
+                                    <span class="font-bold text-red-600">$5.00</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Producto 5: Pasteles (Cake) -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group border border-red-100">
                          <div class="relative h-56 w-full product-carousel">
-                            <img src="https://placehold.co/600x400/fed7aa/c2410c?text=Pasteles+(Cake)" alt="Pasteles 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/fed7aa/c2410c?text=Pasteles+Navideños" alt="Pasteles 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
                             <img src="https://placehold.co/600x400/c2410c/fed7aa?text=Decoracion+Especial" alt="Pasteles 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
                             
                             <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
@@ -293,7 +290,7 @@
                     </div>
 
                     <!-- Producto 6: Chocolates (Duros) -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group border border-red-100">
                          <div class="relative h-56 w-full product-carousel">
                             <img src="https://placehold.co/600x400/4a2c2a/f5e0c0?text=Chocolates" alt="Chocolates 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
                             <img src="https://placehold.co/600x400/f5e0c0/4a2c2a?text=Bombones" alt="Chocolates 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
@@ -308,7 +305,7 @@
                     </div>
 
                     <!-- Producto 7: Chocobombas -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group border border-red-100">
                          <div class="relative h-56 w-full product-carousel">
                             <img src="https://placehold.co/600x400/7c2d12/ffedd5?text=Chocobombas" alt="Chocobombas 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
                             <img src="https://placehold.co/600x400/ffedd5/7c2d12?text=Explosion+de+Sabor" alt="Chocobombas 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
@@ -323,7 +320,7 @@
                     </div>
 
                     <!-- Producto 8: Otros Dulces -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group border border-red-100">
                          <div class="relative h-56 w-full product-carousel">
                             <img src="https://placehold.co/600x400/d1fae5/047857?text=¡Y+mucho+más!" alt="Otros 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
                             <img src="https://placehold.co/600x400/047857/d1fae5?text=Nuevas+Creaciones" alt="Otros 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
@@ -336,15 +333,33 @@
                             <p class="text-gray-600 mb-4">Siempre estoy horneando cosas nuevas. ¡Pregúntame qué hay de nuevo esta semana!</p>
                         </div>
                     </div>
+
+                    <!-- NUEVO Producto 9: Mini Donas (Reemplazando Trufas) -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 group border border-red-100">
+                         <div class="relative h-56 w-full product-carousel">
+                            <img src="https://placehold.co/600x400/fbcfe8/be185d?text=Mini+Donas+Festivas" alt="Mini Donas 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 carousel-img">
+                            <img src="https://placehold.co/600x400/be185d/fbcfe8?text=Decoradas" alt="Mini Donas 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 carousel-img">
+                            
+                            <button onclick="moveSlide(this, -1)" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❮</button>
+                            <button onclick="moveSlide(this, 1)" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70">❯</button>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-gray-800">Mini Donas</h3>
+                            <p class="text-gray-600 mb-4">Pequeñas, esponjosas y cubiertas de tus toppings favoritos. ¡Imposible comer solo una!</p>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
         </section>
 
         <!-- ==== 5. SECCIÓN DE PEDIDOS (CALL TO ACTION) ==== -->
-        <section id="pedir" class="bg-orange-100 py-20">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-orange-800 mb-4">¿Se te antojó algo?</h2>
+        <section id="pedir" class="bg-green-100 py-20 relative overflow-hidden">
+             <!-- Adorno de fondo -->
+             <div class="absolute -bottom-10 left-0 -ml-10 text-green-200 opacity-30 text-9xl">🎄</div>
+
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">¿Se te antojó algo para la Nochebuena?</h2>
                 <p class="text-lg text-gray-700 mb-8">
                     ¡Hacer tu pedido es súper fácil! Solo haz clic en el botón de abajo.
                 </p>
@@ -353,9 +368,9 @@
                     
                     <!-- BOTÓN DE WHATSAPP -->
                     <a 
-                        href="https://wa.me/593999503436?text=¡Hola!%20Quisiera%20hacer%20un%20pedido%20de%20tus%20dulces."
+                        href="https://wa.me/593999503436?text=¡Hola!%20Quisiera%20hacer%20un%20pedido%20de%20tus%20dulces%20navideños."
                         target="_blank" 
-                        class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-lg inline-flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-105"
+                        class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full text-lg inline-flex items-center justify-center shadow-lg transition-transform duration-300 hover:scale-105 border-b-4 border-red-800"
                     >
                         <!-- Icono de WhatsApp -->
                         <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
@@ -367,14 +382,14 @@
                 </div>
                 
                 <p class="mt-6 text-gray-600">
-                    Te responderé lo más rápido posible para confirmar tu pedido. ¡Gracias!
+                    Te responderé lo más rápido posible. ¡Felices Fiestas! 🎅
                 </p>
             </div>
         </section>
     </main>
 
     <!-- ==== 6. PIE DE PÁGINA (FOOTER) ==== -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-800 text-white py-8 border-t-4 border-red-600">
         <div class="container mx-auto px-6 text-center">
             <p>&copy; 2025 - JE Dulce Gesto. Todos los derechos reservados.</p>
             <p class="mt-2">Hecho con ❤️ por Jorge Enrique</p>
@@ -403,7 +418,7 @@
             // Calcular el índice de la siguiente imagen
             let nextIndex = activeIndex + direction;
             
-            // Loop infinito (si llega al final, vuelve al inicio y viceversa)
+            // Loop infinito
             if (nextIndex >= images.length) {
                 nextIndex = 0;
             } else if (nextIndex < 0) {
